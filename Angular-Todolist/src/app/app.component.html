@@ -1,0 +1,82 @@
+<section class="m-t-10">
+  <div class="container ">
+    <div class="row">
+      <form (ngSubmit)="onSubmit(taskForm)" #taskForm="ngForm">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <h3>Add Details</h3>
+          </div>
+          <div class="card-body row">
+           
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="fname" class="form-label">Name</label>
+                  <input type="text" class="form-control-sm" id="fname" placeholder="" ngModel name="fname" required>
+                  <small *ngIf="taskForm.invalid && taskForm.dirty" id="errorMessage"
+                    class="form-text text-danger">Enter Your Full Name*
+                    </small>
+                </div>
+                <div class="form-group">
+                  <label for="city" class="form-label">City:</label>
+                  <input type="text" class="form-control-sm" id="city" placeholder="" ngModel name="city" required>
+                  <small *ngIf="taskForm.invalid && taskForm.dirty" id="errorMessage"
+                    class="form-text text-danger">Enter Your City*</small>
+                </div>
+
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="email0" class="form-label">Email ID:</label>
+                  <input type="email" class="form-control-sm" id="email0" placeholder="" ngModel name="email0" required>
+                  <small *ngIf="taskForm.invalid && taskForm.dirty" id="errorMessage"
+                    class="form-text text-danger">Enter Your Email ID*</small>
+                </div>
+                <div class="form-group">
+                  <label for="phone" class="form-label">Phone Number:</label>
+                  <input type="text" class="form-control-sm" id="phone" placeholder="" ngModel name="phone" required>
+                  <small *ngIf="taskForm.invalid && taskForm.dirty" id="errorMessage"
+                    class="form-text text-danger">Enter Your Phone Number*</small>
+                </div>
+              </div>
+            </div>
+          <div class="card-footer">
+            <button type="submit" [disabled]="taskForm.invalid" id="submitButton"
+              class="btn-sm btn btn-success">Submit</button>
+          </div>
+        </div>
+      </div>
+</form>
+    </div>
+  </div>
+</section>
+
+<div class="clear"></div>
+<section class="m-t-10">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table-responsive table table-striped">
+          <thead>
+            <th scope="col">Select</th>
+            <th scope="col">Full Name</th>
+            <th scope="col">Email ID</th>
+            <th scope="col">City</th>
+            <th scope="col">Phone Number</th>
+            <th>Action</th>
+          </thead>
+          <tbody>
+            <tr *ngFor="let t of taskArray; index as i">
+              <td><input (change)="onCheck(i)" id="myCheckbox" type="checkbox" required></td>
+              <td>{{t.fname}}</td>
+              <td>{{t.city}}</td>
+              <td>{{t.email0}}</td>
+              <td>{{t.phone}}</td>
+              <td><button class="btn btn-danger btn-sm" (click)="onDelete(i)" [disabled]="">Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,34 @@
+.container{
+    width:700px;
+}
+.form-label{
+    display: block;
+    
+    font-size: 13px;
+}
+.form-control-sm:hover,
+.form-control-sm:focus,
+.form-control-sm{
+    width: 100%;
+    border-radius: 0px;
+    border:1px solid #eee;
+    background-color: #eee;
+}
+.card-header {
+    padding: 5px 9px;
+}
+.card-header h3{
+    font-size: 18px;
+    padding: 0px;
+    margin: 0px;
+
+}
+.m-t-10{
+    margin-top:10px;
+}
+button {
+    font-size: 13px;
+}
+.form-text{
+font-size: 11px;
+}

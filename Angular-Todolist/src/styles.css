@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+.clear{
+    clear:both;
+    display: block;
+}
+.table{
+    font-size: 12px;
+    text-align: center;
+}
+.table thead{
+    background-color: #dcdcdc;
+    
+}
+.table thead > th{
+    padding: 5px 11px;
+}

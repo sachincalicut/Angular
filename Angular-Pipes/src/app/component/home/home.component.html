@@ -1,0 +1,6 @@
+<div class="container">
+    <input type="text" value="" #txtname>
+    <button type="button" (click)="add(txtname.value)">Add Country List</button>
+    <p>{{country | joinArray}}</p>
+</div>
+

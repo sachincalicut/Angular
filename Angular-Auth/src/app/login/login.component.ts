@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class LoginComponent {
   form: FormGroup = this.fb.group({
     username: ['', Validators.required],
-    password: ['', Validators.required],
+    password: ['', Validators.required]
   });
   constructor(
     private authService: AuthService, 

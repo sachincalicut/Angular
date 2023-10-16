@@ -1,0 +1,29 @@
+.login-cont{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.login-cont input{
+    border: 1px solid #dcdcdc;
+    outline: none;
+    padding: 10px 20px;
+    color: #666;
+    background-color: #f7f7f7;
+    margin: -1px 0px;
+    font-size: 12px;
+    width: 200px;
+    
+}
+.login-cont button{
+    width: 242px;
+    text-align: center;
+    color: #fff;
+    background-color: #292929;
+    padding: 8px 10px;
+    border: 0px;
+    outline: none;
+    text-transform: uppercase;
+    cursor:pointer;
+}

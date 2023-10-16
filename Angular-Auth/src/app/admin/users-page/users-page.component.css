@@ -1,0 +1,11 @@
+button{
+    width: 242px;
+    text-align: center;
+    color: #fff;
+    background-color: #292929;
+    padding: 8px 10px;
+    border: 0px;
+    outline: none;
+    text-transform: uppercase;
+    cursor:pointer;
+}

@@ -1,0 +1,19 @@
+.container-cst{
+    width:900px;
+    float: none;
+    margin: 0 auto;
+}
+
+.scan-pay{
+    position: relative;
+   margin: 0 auto;
+    width:220px;
+}
+.scan-pay > img{
+   
+  width:100%;
+}
+.pay-btn{
+    position: relative;
+    text-align: center;
+}
